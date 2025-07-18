@@ -1,0 +1,4 @@
+FAISS Overview
+
+FAISS (Facebook AI Similarity Search) enables efficient vector similarity search.
+It is commonly used for building RAG systems and semantic retrieval engines.

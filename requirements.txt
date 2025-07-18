@@ -1,0 +1,37 @@
+# requirements.txt
+
+# Core LLM tools
+langchain>=0.1.16
+langchain-community>=0.0.20
+langchain-openai>=0.0.8
+openai>=1.14.0
+tiktoken>=0.5.1
+
+# Embedding and vector search
+faiss-cpu>=1.7.4
+
+# Document loaders and parsing
+unstructured
+pypdf
+
+# Web servers and APIs
+fastapi
+uvicorn[standard]
+
+# HTTP requests for tools
+requests
+
+# CLI and utilities
+python-dotenv
+
+# Testing
+pytest
+unittest2
+
+# UI for demos
+streamlit
+
+# Notes:
+# - Set OPENAI_API_KEY and WEATHER_API_KEY in your environment variables.
+# - If running locally, you may need to expose the API with ngrok for Twilio testing.
+# - For production, consider deploying on Render, Railway, or Google Cloud Run.

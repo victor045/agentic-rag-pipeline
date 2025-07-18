@@ -1,0 +1,27 @@
+# docker-compose.yml
+version: '3.9'
+
+services:
+  app:
+    build: .
+    container_name: agentic_rag_app
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - WEATHER_API_KEY=${WEATHER_API_KEY}
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: tail -f /dev/null
+    tty: true
+
+# Usage:
+# 1. Create a .env file in the root directory with your API keys:
+#    OPENAI_API_KEY=sk-...
+#    WEATHER_API_KEY=your_weather_key
+#
+# 2. Build and run the container:
+#    docker compose up --build
+#
+# 3. Open a shell to execute scripts:
+#    docker compose exec app python -m app.rag_pipeline
+
