@@ -35,7 +35,7 @@ WEATHER_API_KEY=your_openweather_key
 
 ---
 
-## 🧠 Run the Ingestion Pipeline
+## Run the Ingestion Pipeline
 
 ```bash
 python -m app.ingestion
