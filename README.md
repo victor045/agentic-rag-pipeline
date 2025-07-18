@@ -1,22 +1,22 @@
-# 🤖 Agentic RAG System
+# Agentic RAG System
 
 This project demonstrates a production-ready Retrieval-Augmented Generation (RAG) system with agentic orchestration, powered by LangChain, OpenAI, and FAISS. It supports both interactive demos (via Streamlit) and API integration (via FastAPI), with optional WhatsApp support using Twilio.
 
 ---
 
-## 🚀 Features
+## Features
 
-- 🔍 **Document-aware RAG**: Uses OpenAI embeddings + FAISS
-- 🧠 **Agentic Orchestration**: Modular tool use with LangChain agents
-- 🌍 **Multilingual Fallback**: Clarifies questions via LLM
-- 🧪 **Testing Ready**: Includes unit tests for core pipeline
-- 📲 **WhatsApp Integration**: Send questions via WhatsApp using Twilio
-- 🖥️ **Streamlit UI**: For live question-answering demos
-- 🔌 **FastAPI Server**: For backend / bot integrations
+-  **Document-aware RAG**: Uses OpenAI embeddings + FAISS
+-  **Agentic Orchestration**: Modular tool use with LangChain agents
+-  **Multilingual Fallback**: Clarifies questions via LLM
+-  **Testing Ready**: Includes unit tests for core pipeline
+-  **WhatsApp Integration**: Send questions via WhatsApp using Twilio
+-  **Streamlit UI**: For live question-answering demos
+-  **FastAPI Server**: For backend / bot integrations
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 Install dependencies:
 ```bash
@@ -43,7 +43,7 @@ python -m app.ingestion
 
 ---
 
-## 📚 Query with RAG
+## Query with RAG
 
 ```bash
 python -m app.rag_pipeline
@@ -51,7 +51,7 @@ python -m app.rag_pipeline
 
 ---
 
-## 💬 Run the Agentic Tool-Orchestrator
+## Run the Agentic Tool-Orchestrator
 
 ```bash
 python -m app.agentic_orchestrator
@@ -59,7 +59,7 @@ python -m app.agentic_orchestrator
 
 ---
 
-## 🧪 Run Tests
+## Run Tests
 
 ```bash
 python -m unittest tests/test_rag.py
@@ -67,13 +67,13 @@ python -m unittest tests/test_rag.py
 
 ---
 
-## 🌐 Run FastAPI
+## Run FastAPI
 
 ```bash
 uvicorn api_main:app --reload --port 8001
 ```
 
-### 📩 Optional: Enable WhatsApp Webhook (Twilio)
+### Optional: Enable WhatsApp Webhook (Twilio)
 
 ```bash
 python3 twilio_webhook.py
@@ -88,7 +88,7 @@ https://your-ngrok-url.ngrok.io/twilio
 
 ---
 
-## 🖼️ Run the Streamlit UI
+## Run the Streamlit UI
 
 ```bash
 streamlit run streamlit_app.py
@@ -96,7 +96,7 @@ streamlit run streamlit_app.py
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 ├── app/
@@ -121,8 +121,4 @@ streamlit run streamlit_app.py
 ```
 
 ---
-
-## 👤 Author
-
-Victor Fernando — built for demonstrating production-grade AI agent skills with LangChain + OpenAI + Twilio.
 
